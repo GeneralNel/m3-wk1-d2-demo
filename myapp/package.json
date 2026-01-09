@@ -1,11 +1,11 @@
 {
   "name": "myapp-test",
   "version": "1.0.0",
+  "main": "app.js",
   "description": "My First Express App",
   "license": "ISC",
   "author": "Mushfiq Rashid",
   "type": "commonjs",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
