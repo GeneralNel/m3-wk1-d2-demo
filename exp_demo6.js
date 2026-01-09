@@ -7,9 +7,10 @@ app.get('/home', (req, res) => {
 app.get('/about', (req, res) => {
     res.send('About');
 });
-// For invalid routes
 
+// Invalid Routes - Needed to use app.use for handling invalid routes instead of app.get to prevent crash
+app.use((req, res) => {
+    res.status(404).send("404! This is an invalid URL!");
+});
 
 app.listen(3000);
-
-
