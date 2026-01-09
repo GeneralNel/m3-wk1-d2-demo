@@ -1,11 +1,9 @@
-var express = require('express');
+var express = require("express");
+var routerModule = require("./exp_demo3a.js");
+
 var app = express();
 
+//both 3a and 3b in same directory
+app.use("/routedemo", routerModule);
 
-
-//both exp-demo3a.js and exp-demo3b.js are in same directory
-
-
-app.listen(3000);
-
-
+app.listen(3000)
